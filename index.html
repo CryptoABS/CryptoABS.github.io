@@ -10,6 +10,7 @@
       <!-- favicon.ico in the root directory -->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
       <link rel="stylesheet" href="./resource/main.css">
+      <link rel="stylesheet" href="./resource/flipclock/css/flipclock.css">
 
       <meta property="og:title" content="CryptoABS, 有形資產數位融資">
 
@@ -81,7 +82,8 @@
                 </div>
 
                 <div class="tagline">
-                  <h2 class="tagline__title">CryptoABS介绍</h2>
+                  <h2 class="tagline__title">CryptoABS</h2>
+                  <div class="clock"></div>
                   <div class="tagline__body">2017年7月20日台北時間24點開啟CryptoABS眾籌</div>
 
                   <div class="tagline__buttons">
@@ -277,6 +279,10 @@
         </div>
       </div>
 
+    <script src="./resource/flipclock/js/jquery.js"></script>
+    <script src="./resource/flipclock/js/flipclock.js"></script>
+
+
     <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -338,6 +344,13 @@
       var env = '/dev';
       var version = '/v1';
       var subscribedEmail = document.getElementsByClassName("email-input");
+      var expiredTime = new Date("2017-07-20T24:00:00.000Z").getTime();
+      var currentTime = new Date().getTime();
+
+      $('.clock').FlipClock((expiredTime - currentTime)/1000, {
+        clockFace: 'DailyCounter',
+        countdown: true,
+      });
 
       var url = {
         health: `${domain}${env}${version}/mail/health`,
