@@ -2712,8 +2712,7 @@ input.email-form__input--email:disabled {
     box-shadow: 0 12px 23px 0 rgba(74, 92, 105, .33);
     border-radius: 8px;
     padding: 50px 0;
-    height: 740px;
-    width: 1080px
+    width: 1080px;
 }
 
 .circles {
@@ -2723,7 +2722,7 @@ input.email-form__input--email:disabled {
     left: 0;
     top: 0;
     overflow: hidden;
-    z-index: 500
+    z-index: 500;
 }
 
 .slide__circles {
@@ -2731,14 +2730,14 @@ input.email-form__input--email:disabled {
     top: 56%;
     left: 0;
     width: 1080px;
-    height: 740px
+    height: 740px;
 }
 
 .slide__circle-wrap {
     position: absolute;
     left: 50%;
     top: 110%;
-    transform: translate3d(-50%, -50%, 0)
+    transform: translate3d(-50%, -50%, 0);
 }
 
 .slide__circle {
@@ -2748,7 +2747,7 @@ input.email-form__input--email:disabled {
     border: 2px solid #fff;
     opacity: .1;
     transform: scale(1) translate3d(0, 0, 0);
-    transition: transform 1s cubic-bezier(.23, 1, .32, 1), opacity .4s linear
+    transition: transform 1s cubic-bezier(.23, 1, .32, 1), opacity .4s linear;
 }
 
 .slide__circle--one .slide__circle {
