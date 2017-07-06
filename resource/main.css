@@ -599,9 +599,9 @@ li.social-link a {
 }
 
 @media (max-width:767px) {
-    .header {
+    /*.header {
         display: none
-    }
+    }*/
     .header-wrap--page .header {
         display: -ms-flexbox;
         display: flex
