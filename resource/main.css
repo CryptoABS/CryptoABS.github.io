@@ -3212,36 +3212,20 @@ input.email-form__input--email:disabled {
     background-size: cover
 }
 
-.contributor--carl .contributor__pic {
-    background-image: url(../img/new-site/carl.png)
+.contributor--ocean .contributor__pic {
+    background-image: url(../img/1.jpg)
 }
 
-.contributor--jarrad .contributor__pic {
-    background-image: url(../img/new-site/jarrad.png)
+.contributor--gen .contributor__pic {
+    background-image: url(../img/2.jpg)
 }
 
-.contributor--roman .contributor__pic {
-    background-image: url(../img/new-site/roman.png)
+.contributor--phyrex .contributor__pic {
+    background-image: url(../img/3.jpg)
 }
 
-.contributor--victor .contributor__pic {
-    background-image: url(../img/new-site/victor.png)
-}
-
-.contributor--alexander .contributor__pic {
-    background-image: url(../img/new-site/alexander.png)
-}
-
-.contributor--andrey .contributor__pic {
-    background-image: url(../img/new-site/andrey.png)
-}
-
-.contributor--gustavo .contributor__pic {
-    background-image: url(../img/new-site/gustavo.png)
-}
-
-.contributor--andrei .contributor__pic {
-    background-image: url(../img/new-site/andrei.png)
+.contributor--yan .contributor__pic {
+    background-image: url(../img/4.png)
 }
 
 .contributor__info {
@@ -3838,7 +3822,9 @@ input.email-form__input--email:disabled {
 
 @media (max-width:767px) {
     .footer {
-        position: static;
+        position: absolute;
+        height: 100%;
+        top: 3250px;
         border-top: 0
     }
     .footer.footer--page {
@@ -3893,4 +3879,30 @@ input.email-form__input--email:disabled {
     .footer-logo {
         display: none
     }
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.vtimeline-content {
+    padding: 10px;
+}
+
+.vtimeline {
+    padding: 62px!important;
+}
+
+.vtimeline:before {
+    background: #4a5c69!important;
+}
+
+.vtimeline-icon {
+    background: #4a5c69!important;
 }
