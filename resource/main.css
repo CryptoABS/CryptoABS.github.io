@@ -254,7 +254,7 @@ a {
     text-align: center;
     letter-spacing: 1px;
     color: #fff;
-    background-color: #68c0f8;
+    background-color: #445561;
     box-shadow: 0 8px 14px 0 #dee2e5;
     border-radius: 8px;
     transform: translate3d(0, 0, 0) scale(1);
@@ -1822,7 +1822,8 @@ li.social-link a {
 
 .slide.slide--one .slide__inner {
     margin: 0;
-    width: 100%
+    width: 100%;
+    /*box-shadow: 0 12px 23px 0 rgba(74, 92, 105, .33);*/
 }
 
 .tagline {
@@ -1840,7 +1841,7 @@ li.social-link a {
     background-color: #fff;
     box-shadow: 0 5px 8px 0 rgba(72, 89, 102, .06);
     padding: 0 0 24px 0;
-    background-image: linear-gradient(-180deg, #2c74bd 0, #fafbfc 99%)
+    background-image: linear-gradient(-180deg, #5A6F7D 0, #fafbfc 99%)
 }
 
 .crowdsale .tagline {
@@ -1923,7 +1924,7 @@ li.social-link a {
 }
 
 .button.button--color-blue {
-    color: #68c0f8
+    color: #49555f
 }
 
 .button.button--color-purple {
@@ -3103,7 +3104,7 @@ input.email-form__input--email:disabled {
 }
 
 .slide.slide--five .slide__inner {
-    background-image: linear-gradient(-138deg, #5070d5 14%, #4957b8 100%);
+    background-image: linear-gradient(-180deg, #5a6f7e 0, #445561 100%);
     box-shadow: 0 12px 23px 0 rgba(74, 92, 105, .33);
     border-radius: 8px;
     padding: 50px 0;
@@ -3153,7 +3154,7 @@ input.email-form__input--email:disabled {
     height: 52px;
     width: 52px;
     border-radius: 50%;
-    background: #68c0f8;
+    background: #233744;
     box-shadow: 0 2px 9px 0 rgba(57, 80, 164, .69);
     position: relative;
     animation-timing-function: cubic-bezier(.685, 0, .025, 1.185);
@@ -3208,7 +3209,7 @@ input.email-form__input--email:disabled {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    box-shadow: 0 2px 8px 0 #394c97;
+    box-shadow: 0 2px 8px 0 #080a0e;
     background-size: cover
 }
 
@@ -3240,21 +3241,21 @@ input.email-form__input--email:disabled {
 
 .contributor__info__position {
     font-size: 14px;
-    color: #68c0f8
+    color: #dbe7f1;
 }
 
 @keyframes pulsate {
     0% {
         transform: scale(1);
-        box-shadow: 0 2px 9px 0 rgba(57, 80, 164, .69)
+        box-shadow: 0 2px 8px 0 #080a0e;
     }
     50% {
         transform: scale(1.14);
-        box-shadow: 0 10px 14px 0 rgba(57, 80, 164, .69)
+        box-shadow: 0 2px 8px 0 #080a0e;
     }
     100% {
         transform: scale(1);
-        box-shadow: 0 2px 9px 0 rgba(57, 80, 164, .69)
+        box-shadow: 0 2px 8px 0 #080a0e;
     }
 }
 
@@ -3322,7 +3323,11 @@ input.email-form__input--email:disabled {
 
 .slide.slide--six {
     padding: 40px 0 40px 0;
-    margin: 0
+    margin: 0;
+    width: 860px;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 12px 23px 0 rgba(74, 92, 105, .33);
 }
 
 .slide--shown {
@@ -3824,7 +3829,7 @@ input.email-form__input--email:disabled {
     .footer {
         position: absolute;
         height: 100%;
-        top: 3250px;
+        top: 3700px;
         border-top: 0
     }
     .footer.footer--page {
@@ -3879,6 +3884,9 @@ input.email-form__input--email:disabled {
     .footer-logo {
         display: none
     }
+    .imageWindow {
+        width: inherit;
+    }
 }
 
 h3 {
@@ -3905,4 +3913,9 @@ h3 {
 
 .vtimeline-icon {
     background: #4a5c69!important;
+}
+@media only screen and (max-width: 992px) {
+    .vtimeline:before {
+        left: 63px!important;
+    }
 }
