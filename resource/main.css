@@ -3021,7 +3021,7 @@ input.email-form__input--email:disabled {
         padding: 30px 0;
         width: 100%;
         border-radius: 0;
-        height: 600px
+        /*height: 600px;*/
     }
     .slide__circle-wrap {
         top: 145%
