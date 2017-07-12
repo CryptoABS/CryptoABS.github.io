@@ -7,8 +7,7 @@
   <title>CryptoABS, 有形资产数字融资</title>
   <meta name="description" content="CryptoABS, 有形资产数字融资">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- favicon.ico in the root directory -->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
   <link rel="stylesheet" href="./resource/main.css">
   <link rel="stylesheet" href="./resource/flipclock/css/flipclock.css">
   <link rel="stylesheet" href="./resource/Responsive-Timeline-Generator-With-jQuery-Timeline/dist/vertical-timeline.css">
@@ -233,14 +232,12 @@
                 <p class="slide__description">藉由数字与现实资产的转换，让以太坊更加成熟稳定。</p>
               </div>
               <div class="email-form">
-                <!-- Mailchimp -->
                 <div class="email-form__inner">
                   <input type="email" value="" name="EMAIL" class="required email-input mce-EMAIL email-form__input email-form__input--email"
                     placeholder="输入您的信箱" aria-required="true">
                   <input type="submit" onclick="subscribeEmail()" value="订阅最新消息" name="subscribe" class="button email-form__input email-form__input--sumbit mc-embedded-subscribe button email-button">
                   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d0c1a0be2adff281b52e27a7f_09e2d9ae07" tabindex="-1" value=""></div>
                 </div>
-                <!-- End Mailchimp -->
               </div>
             </div>
           </div>
@@ -252,95 +249,7 @@
     <script src="./resource/flipclock/js/flipclock.js"></script>
 
     <script src="./resource/Responsive-Timeline-Generator-With-jQuery-Timeline/dist/vertical-timeline.min.js"></script>
-    <!-- Google Analytics -->
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-      try {
-        ga('create', 'UA-101869014-1', 'auto');
-        ga('send', 'pageview');
-      } catch (e) { }
-
-      function httpGetAsync(theUrl, callback) {
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.onreadystatechange = function () {
-          if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            callback(xmlHttp.responseText);
-        }
-        xmlHttp.open("GET", theUrl, true); // true for asynchronous 
-        xmlHttp.send(null);
-      }
-
-      function httpPostAsync(theUrl, params, callback) {
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("Post", theUrl, true); // true for asynchronous 
-        // Send the proper header information along with the request
-        xmlHttp.setRequestHeader("Content-type", "application/json");
-        // xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "*");
-        // xmlHttp.setRequestHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
-        // xmlHttp.setRequestHeader("header", "Accept: application/json");
-
-        xmlHttp.onreadystatechange = function () {
-          if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            callback(xmlHttp.responseText);
-        }
-        xmlHttp.send(JSON.stringify(params));
-      }
-      function responseText(response) {
-        console.log(response);
-      }
-
-      function validateEmail(email) {
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(email);
-      }
-
-      function subscribeEmail() {
-        var emailInput = document.getElementsByClassName("email-input")[0].value;
-        if (validateEmail(emailInput)) {
-          var postBody = {
-            email: emailInput
-          };
-          httpPostAsync(url.subscribe, postBody, responseText);
-        }
-      }
-      var domain = 'https://2p7zpu5xsj.execute-api.ap-southeast-1.amazonaws.com';
-      var env = '/dev';
-      var version = '/v1';
-      var subscribedEmail = document.getElementsByClassName("email-input");
-      var expiredTime = new Date("2017-07-14T01:00:00.000Z").getTime();
-      var currentTime = new Date().getTime();
-
-      $('.clock').FlipClock((expiredTime - currentTime) / 1000, {
-        clockFace: 'DailyCounter',
-        countdown: true,
-      });
-
-      $('#timeline').verticalTimeline({
-        // arrows: false,
-        animate: 'fade'
-      });
-
-      var url = {
-        health: `${domain}${env}${version}/mail/health`,
-        subscribe: `${domain}${env}${version}/mail/subscribe`,
-        subscribers: `${domain}${env}${version}/mail/subscribers`,
-        validation: `${domain}${env}${version}/mail/validation`,
-      };
-      // console.log(url.health)
-      // test server
-      // httpGetAsync(url.health, responseText);
-      // httpGetAsync(url.subscribers, responseText);
-      // httpPostAsync(url.subscribe, postBody, responseText);
-      // httpGetAsync(url.health, responseText);
-      // httpGetAsync(url.health, responseText);
-    </script>
-    <!-- /Google Analytics -->
+    <script src="./resource/initialize.js"></script>
 
     <div id="timeline" class="vtimeline">
       <div class="vtimeline-point">
@@ -430,7 +339,7 @@
         </div>
       </div>
     </div>
-    <script src="./resource/util.js"></script>
+    <script src="./resource/finalize.js"></script>
 </body>
 
 </html>
