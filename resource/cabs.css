@@ -88,3 +88,7 @@ input[type=checkbox] {
 .contractAddress {
     word-break: break-all;
 }
+
+.flip-clock-wrapper {
+    z-index: 1;
+}
