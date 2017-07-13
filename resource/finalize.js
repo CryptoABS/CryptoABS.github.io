@@ -58,6 +58,7 @@ function copyToClipboard(elem) {
         target = document.getElementById(targetId);
         if (!target) {
             var target = document.createElement("textarea");
+            target.style.display = "none";
             target.style.position = "absolute";
             target.style.left = "-9999px";
             target.style.top = "0";

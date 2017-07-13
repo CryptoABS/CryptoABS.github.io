@@ -296,7 +296,7 @@ a {
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
-    z-index: 900;
+    z-index: 1;
     top: 40px;
     left: 0;
     opacity: 1;
