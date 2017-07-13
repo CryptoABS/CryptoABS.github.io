@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./resource/main.css">
   <link rel="stylesheet" href="./resource/flipclock/css/flipclock.css">
   <link rel="stylesheet" href="./resource/Responsive-Timeline-Generator-With-jQuery-Timeline/dist/vertical-timeline.css">
+  <link rel="stylesheet" href="./resource/jquery-modal-0.8.0/jquery.modal.min.css">
+  <link rel="stylesheet" href="./resource/cabs.css">
   <meta property="og:title" content="CryptoABS, 有形资产数字融资">
   <style id="style-1-cropbar-clipper">
     /* Copyright 2014 Evernote Corporation. All rights reserved. */
@@ -121,7 +123,7 @@
                 <div class="tagline__body">CABS token将于UTC 2017-07-14 01:00公开认购</div>
 
                 <div class="tagline__buttons">
-                  <a class="button button--bg-white button--color-blue" target="_blank" href="#">如何投资</a>
+                  <a class="button button--bg-white button--color-blue" target="_blank" href="#agreeModal">如何投资</a>
                   <a class="button button--bg-white button--color-blue button--more" target="_blank" href="https://github.com/CryptoABS/cryptoabs/blob/master/README_cn.md">审阅白皮书</a>
                 </div>
               </div>
@@ -247,8 +249,8 @@
 
     <script src="./resource/flipclock/js/jquery.js"></script>
     <script src="./resource/flipclock/js/flipclock.js"></script>
-
     <script src="./resource/Responsive-Timeline-Generator-With-jQuery-Timeline/dist/vertical-timeline.min.js"></script>
+    <script src="./resource/jquery-modal-0.8.0/jquery.modal.min.js"></script>
     <script src="./resource/initialize.js"></script>
 
     <div id="timeline" class="vtimeline">
@@ -336,6 +338,38 @@
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
+    <div id="agreeModal" class="modal" style="opacity: 1; display: none;">
+      <img src="./img/buyToken.png" alt="qrcode" style="width:100%">
+      <div class="agreeContainer">
+        <div>
+          <a href="#investModal">
+            <span class="checkboxAgree">
+              <input type="checkbox" value="1" id="checkboxAgreeInput" name="">
+              <label for="checkboxAgreeInput" id="checkboxAgree"></label>
+            </span>
+          </a>
+        </div>
+        <div>
+          请仔细阅读以下<a href='#'><u>条款和条件</u>。</a>
+        </div>
+      </div>
+    </div>
+    <div id="investModal" class="modal" style="opacity: 1; display: none;">
+      <div class="investContainer">
+        <div class="qrcode">
+          <h2 class="contract__title">合約地址</h2>
+          <img src="./img/QR_code.png" alt="qrcode" style="width:100%">
+          <p id="contractAddress" class="contractAddress">0xfd95392e1ce28a6debff90feb0a28a1392df738b</p>
+          <a class="button button--bg-white button--color-blue" id="contractAddressCopy">复制地址</a>
+        </div>
+        <div class="userguide">
+          <h2 class="contract__title">如何购买?</h2>
+          <a target="_blank" href="./pdf/cryptoABS.pdf">
+            <img src="./img/user_guide.png" alt="userguide" style="width: 80%; margin: 25px;">
+          </a>
         </div>
       </div>
     </div>

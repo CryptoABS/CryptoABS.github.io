@@ -430,7 +430,7 @@ a.logo {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    padding: 10px 15px 15px;
+    padding: 10px 14px 15px;
     color: #70808d;
     transition: opacity .2s ease, color .2s ease
 }
@@ -448,7 +448,7 @@ a.logo {
 }
 
 .header .nav a:hover {
-    color: #6673ce
+    color: #333;
 }
 
 .header-wrap--page .header .nav a:hover {
@@ -542,7 +542,6 @@ li.social-link a {
     .header {
         top: 20px;
         box-sizing: border-box;
-        padding: 0 20px
     }
     .header-wrap--page .header {
         top: 0;
@@ -1301,9 +1300,6 @@ li.social-link a {
         width: 100%;
         margin: 0
     }
-    .clock {
-        display: none;
-    }
 }
 
 @media (max-width:767px) {
@@ -1329,6 +1325,9 @@ li.social-link a {
     .slide__footer {
         font-size: 14px;
         line-height: 20px
+    }
+    .clock {
+        display: none;
     }
 }
 
