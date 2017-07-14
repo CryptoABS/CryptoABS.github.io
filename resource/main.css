@@ -3225,19 +3225,23 @@ input.email-form__input--email:disabled {
 }
 
 .contributor--ocean .contributor__pic {
-    background-image: url(../img/1.jpg)
+    filter: grayscale(100%);
+    background-image: url(../img/cofunder/Ocean.jpg)
 }
 
 .contributor--gen .contributor__pic {
-    background-image: url(../img/2.jpg)
+    filter: grayscale(100%);
+    background-image: url(../img/cofunder/Gen.png)
 }
 
 .contributor--phyrex .contributor__pic {
-    background-image: url(../img/3.jpg)
+    filter: grayscale(100%);
+    background-image: url(../img/cofunder/Phyrex.jpg)
 }
 
 .contributor--yan .contributor__pic {
-    background-image: url(../img/4.png)
+    filter: grayscale(100%);
+    background-image: url(../img/cofunder/Yan.jpg)
 }
 
 .contributor__info {
