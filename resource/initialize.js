@@ -14,3 +14,14 @@ $('#timeline').verticalTimeline({
   // arrows: false,
   animate: 'fade'
 });
+
+/**
+ * use Clipboard of contractAddress
+ */
+
+var contractAddress = '0xfd95392e1ce28a6debff90feb0a28a1392df738b';
+var clipboard = new Clipboard('#contractAddressCopy', {
+    text: function() {
+        return contractAddress;
+    }
+});
