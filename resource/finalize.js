@@ -101,7 +101,7 @@ var domain = 'https://2p7zpu5xsj.execute-api.ap-southeast-1.amazonaws.com';
 var env = '/dev';
 var version = '/v1';
 var subscribedEmail = document.getElementsByClassName("email-input");
-var expiredTime = new Date("2017-07-14T01:00:00.000Z").getTime();
+var expiredTime = new Date("2017-08-04T09:00:00.000Z").getTime();
 var currentTime = new Date().getTime();
 var url = {
   health: `${domain}${env}${version}/mail/health`,
